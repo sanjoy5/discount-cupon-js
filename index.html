@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cupon Code</title>
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-center bg-cyan-400">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="text-2xl uppercase tracking-widest">Discount </span>
+                <img src="./images/logo.png" class="w-16 h-16 text-white p-2" alt="">
+                <span class="text-2xl uppercase tracking-widest text-rose-600"> Offers</span>
+            </a>
+        </div>
+    </header>
+
+    <p class="bg-green-100 p-3 text-center ">Use 'DESC30' promo code to get 30% discount on any purchase</p>
+
+
+    <div class="text-center pt-10">
+        <button id="addCost" class="text-lg bg-blue-400 py-3 px-6 text-white rounded">Add Total Cost</button>
+    </div>
+
+    <div class="text-center pt-8 pb-16 px-6">
+        <h2 class="text-xl">Total Cost : $<span id="totalCost" class="font-medium">0</span></h2>
+        <input id="cuponField" class="py-3 px-5 outline-none text-xl border my-5 lg w-full sm:w-11/12 md:w-3/4 lg:w-2/4"
+            type="text" placeholder="Enter your cupon code...">
+        <div>
+            <button id="cuppon-btn"
+                class="py-3 px-5 bg-green-500 rounded text-white text-lg disabled:opacity-70 enabled:hover:bg-green-600"
+                disabled>Use
+                Cupon</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="text-2xl py-5 text-center">Grand Total : $<span class="font-medium" id="grandTotal">0</span></h2>
+
+
+
+    <script src="cupon.js"></script>
+</body>
+
+</html>
